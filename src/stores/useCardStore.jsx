@@ -73,9 +73,14 @@ export const useCardStore = create(
           history: []
         })
 
+      },
+      shuffleCards: () => {
+        set(state => ({
+          cards: shuffle(state.cards)
+        }));
       }
-
     }),
+
     {
       name: "cards-storage"
     }

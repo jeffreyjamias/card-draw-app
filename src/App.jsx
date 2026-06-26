@@ -10,7 +10,8 @@ function App() {
     cards,
     history,
     pickRandomCard,
-    reset
+    reset,
+    shuffleCards
   } = useCardStore();
 
 
@@ -49,6 +50,21 @@ function App() {
           <em>{cards.length}</em>
         </div>
 
+        <div className="action-buttons">
+          <button
+            className="action-button"
+            onClick={shuffleCards}
+          >
+            Shuffle
+          </button>
+
+          <button
+            className="action-button"
+            onClick={reset}
+          >
+            Reset
+          </button>
+        </div>
 
         <button
           className="action-button"
