@@ -66,12 +66,6 @@ function App() {
           </button>
         </div>
 
-        <button
-          className="action-button"
-          onClick={reset}
-        >
-          Reset
-        </button>
 
 
       </div>
