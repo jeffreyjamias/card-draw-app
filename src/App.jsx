@@ -1,17 +1,11 @@
 import { useState } from "react";
 import FlipCard from "./components/filpCard/FlipCard";
-import HistoryModal from "./components/HistoryModal";
-
 import { useCardStore } from "./stores/useCardStore";
 
 import "./App.css";
 
 
 function App() {
-
-  const [showHistory, setShowHistory] = useState(false);
-
-
   const {
     cards,
     history,
@@ -86,13 +80,6 @@ function App() {
 
 
 
-      {
-        showHistory &&
-        <HistoryModal
-          history={history}
-          close={() => setShowHistory(false)}
-        />
-      }
 
 
     </>
